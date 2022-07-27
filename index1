@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- importing "POPPINS FROM GOOGLE" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Registration Form Assignment 1</title>
+  </head>
+  <body>
+    <!--  Center Heading  -->
+      <center>
+        <hr height="4px"><font face="Times">
+          <p>CSE 3002 Internet and Web Programming (L53 + L54)
+            <br> Lab Component<br>
+          Assessment – 1<br><br>
+          <blockquote><i>Nanduri Jayant Vishnu : 20BCE2946</i></blockquote>
+          </p>
+        </font>
+          <h1><font face="Poppins">Registration Form</h1></font>
+        <hr>
+      </center>
+      <!-- main-form -->
+      <form style="margin:2rem;font-family: 'Times New Roman', Times, serif;" action="/" target="_blank" method="get" autocomplete="on">
+        <!-- fieldset-1 -->
+        <fieldset style="border-radius: 2rem;padding:2rem;border-color:#2980B9">
+          <legend>&nbsp;Personal Details&nbsp;</legend>
+          <!-- first name -->
+          <label for="fname"><b>First Name<sup><font color="red">*</font></sup></b></label><br>
+          <input type="text" id="fname" name="fname" required autofocus><br><br>
+          <!-- last name -->
+          <label for="lname"><b>Last Name<sup><font color="red">*</font></sup></b></label><br>
+          <input type="text" id="lname" name="lname" required><br><br>
+          <!-- email -->
+          <label for="email"><b>Email<sup><font color="red">*</font></sup></b></label><br>
+          <input type="email" id="email" name="email" placeholder="abc@xyz.com" required><br><br>
+          <!-- password -->
+          <label for="pwd"><b>Password<sup><font color="red">*</font></sup></b></label><br>
+          <input type="password" id="pwd" name="pwd" minlength=8 required><br><br>
+          <!-- Phone Number -->
+          <label for="phno"><b>Phone Number<sup><font color="red">*</font></sup></b></label><br>
+          <select id="country" name="country">
+            <option value="india">+91</option>
+            <option value="china">+81</option>
+            <option value="bangladesh">+61</option>
+          </select>
+          <input type="tel" id="phno" name="phno" pattern="[0-9]{10}" required><br><br>
+          <!-- date of birth -->
+          <label for="bdate"><b>Birthdate<sup><font color="red">*</font></sup></b></label><br>
+          <input type="date" id="bdate" name="bdate"><br><br>
+          <!-- gender -->
+          <label for=gender><b>Gender<sup><font color="red">*</font></sup></b></label><br><i>
+          <label for="male">M</label>
+          <input type="radio" name="gender" id="male" required>&emsp;
+          <label for="female">F</label>
+          <input type="radio" name="gender" id="others">&emsp;
+          <label for="noComments">Prefer not to say</label>
+          <input type="radio" name="gender" id="noComments"></i><br><br>
+          <!-- address -->
+          <label for="address"><b>Address</b></label><br>
+          <textarea style="resize: none;" cols="50" rows="5"placeholder="Street Name,Area Name,City,State,Pincode"></textarea><br>
+          <!-- profile picture -->
+          <label for="profilepic"><b>Upload your photograph<sup><font color="red">*</font></sup></b><br><sub>(Only png,jpg,jpeg format allowed)</sub><br><br></label>
+          <input type="file" name="profilepic" id="profilepic" accept="image/png, image/jpg" required><br><br>
+          <!-- portfolio -->
+          <label for="portfolio"><b>Github/LnikedIn Link</b> <i>(optional)</i></label>
+          <input style="width:50%" type="url" name="portfolio" id="portfolio" placeholder="https://abc.com"><br><br>
+        </fieldset><br>
+
+
+        <!-- fieldset-2 -->
+        <fieldset style="border-radius: 2rem;padding:2rem;border-color:orange">
+          <legend>&nbsp;Academic Details&nbsp;</legend>
+          <!-- inst. name -->
+          <label for="iname"><b>Institute Name<sup><font color="red">*</font></sup></b></label><br>
+          <input style="width:50%" type="text" id="iname" name="iname" required ><br><br>
+          <!-- registration number -->
+          <label for="regno"><b>Registration Number<sup><font color="red">*</font></sup></b></label><br>
+          <input type="text" id="regno" name="regno" required pattern="[0-9]{2}[A-Za-z]{3}[0-9]{4}"><br><br>
+          <!-- branch -->
+          <label for="branch"><b>Branch<sup><font color="red">*</font></sup></b></label><br></label>
+          <select id="branch" name="branch" required>
+            <option disabled selected value> -- select an option -- </option>
+            <option value="CSE">Computer Science Engineering</option>
+            <option value="ECE">Electronics and Communications Engineering</option>
+            <option value="ME">Mechanical Engineering</option>
+            <option value="CE">Chemical Engineering</option>
+          </select><br><br>
+          <label for="year"><b>Year of Study<sup><font color="red">*</font></sup></b></label><br>
+          <input type="number" min=1 max=4 step=1 required></input>
+        </fieldset><br>
+        <!-- submit reset, t&c applied -->
+        <font size="3" color="red"><sup>*</font></sup><font size="2"><i><u>Required Fields</u></i></font>
+        <br>
+        <input type="checkbox" name="confirm1" id="confirm1" required>I agree to all the <i><b><u>Terms and Conditions.</u></b></i><br>
+        <input type="checkbox" name="confirm2" id="confirm2" required>I confirm that the information provided by me is true to my knowledge.<br>
+        <br><input type="submit" value="submit">&emsp;<input type="reset" value="Reset">
+
+      </form>
+    <!-- Form Details -->
+  </body>
+</html>
+
+
+
